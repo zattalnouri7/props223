@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Profil from './components/Profil';
 
 function App() {
+  const name = "zattal noureddine"
+  const profession = "coach"
+  const bio = "i like football and slipping"
+  const handlname = (a) => alert(a);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Profil name={name} profession={profession} bio={bio} handlname={handlname}>
+        <img src="https://sb.kaleidousercontent.com/67418/992x558/7632960ff9/people.png" />
+      </Profil>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
